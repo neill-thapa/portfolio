@@ -95,32 +95,125 @@ body {
   justify-content: center;
   text-align: center;
   background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+  padding: 2rem 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
 }
 
 .hero h1 {
   font-size: 3rem;
+  font-weight: bold;
 }
 
-.hero p {
-  margin: 1rem 0;
-  font-size: 1.2rem;
+.hero h1 .highlight {
+  color: #2445fe;
+  position: relative;
 }
 
-.btn {
+/* underliine animation to the name */
+.hero h1 .highlight::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #2445fe;
+  bottom: -5px;
+  left: 0;
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* text styles */
+.typed-container {
+  display: inline-block;
+}
+.typed-text {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #e0e0e0;
+  border-right: 2px solid #2445fe;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 1s steps(80, end),
+    blink 1s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+/* cta buttons and container */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-primary {
   text-decoration: none;
   display: inline-block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.9rem 2rem;
   background-color: #2445fe;
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #546eff;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(36, 69, 254, 0.6);
 }
 
-.btn:hover {
-  background-color: #546eff;
+.btn-secondary {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background-color: transparent;
+  color: #2445fe;
+  border: 2px solid #2445fe;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #2445fe;
+  color: white;
   transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(36, 69, 254, 0.6);
 }
 
 /* Sections */
@@ -334,6 +427,26 @@ textarea:focus {
   .menu-toggle {
     display: block;
   }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .typed-text {
+    font-size: 1.2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
   .timeline-item,
   .timeline-item:nth-child(even),
   .timeline-item:nth-child(odd) {
