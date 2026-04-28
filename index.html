@@ -1,180 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src=""></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neil Thapa</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <!-- Navbar -->
     <header class="navbar">
-        <div class="container">
-            <div class="logo">NT</div>
-            <div id="right-header-content">
-                <nav class="nav-links">
-                    <a href="#hero">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#journey">Journey</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-                <div class="menu-toggle">&#9776;</div>
-            </div>
+      <div class="container">
+        <div class="logo">Neil<span>.</span>Thapa</div>
+        <div id="right-header-content">
+          <nav class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#buildlogs">Build Logs</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="menu-toggle">&#9776;</div>
         </div>
+      </div>
     </header>
 
     <!-- Hero -->
     <section id="hero" class="hero">
-        <div class="container hero-content">
-            <h1>Hello, I’m <span class="highlight">Neil Thapa</span></h1>
-            <div class="typed-container">
-                <p class="typed-text">Full-Stack Developer in Training</p>
-            </div>
-            <p class="subtitle">CS Fundamentals & DSA | Building Projects | Growing Everyday</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
+      <div class="hero-grid"></div>
+      <div class="container hero-content">
+        <div class="hero-eyebrow">Currently in learning process</div>
+        <h1>
+          Building things,<br /><em>breaking things,</em><br />writing it down.
+        </h1>
+        <p class="hero-sub">
+          Aspiring Software Engineer<br />
+          Currently Working through <code>FUll-Stack Web Development</code>,
+          <code>DSA</code>,<br />
+          and every bug in between.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#buildlogs" class="btn-ghost">Read Build Logs →</a>
         </div>
+      </div>
+      <div class="hero-num">NT</div>
     </section>
 
     <!-- About -->
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div id="paragraphs">
+      <div class="container">
+        <div class="section-label">About</div>
+        <div class="about-layout">
+          <div class="about-text">
             <p>
-                Hi, I’m Neil, a passionate aspiring Full-Stack Developer with a strong interest in building web applications and software engineering. 
-                I enjoy problem-solving, learning new technologies, and growing my skills by building projects. Currently, I’m focused on learning modern web development through hands-on experience.
+              Hi, I'm Neil — a self-taught developer from Kathmandu, working my
+              way through the programming fundamentals and full-stack web
+              development.
             </p>
             <p>
-                I created and still creating this website as a part of my learning process, to document my learning journey, and to showcase the projects and skills I develop along the way.
+              I believe in learning by building. This site is part of that
+              process — a living document that grows as I do. If something looks
+              broken, I probably just learned why.
             </p>
+          </div>
+          <div class="about-aside">
+            <div class="aside-label">Current learning status</div>
+            <div class="status-line">
+              <span class="status-dot"></span>Full-Stack Dev — Backend with
+              Node.js
             </div>
+            <div class="status-line">
+              <span class="status-dot"></span>Database — MongoDB
+            </div>
+            <div class="aside-stack">
+              <div class="aside-label">Stack so far</div>
+              <div class="tag-group">
+                <span class="tag-pill">JavaScript</span>
+                <span class="tag-pill">Node.js</span>
+                <span class="tag-pill">HTML</span>
+                <span class="tag-pill">CSS</span>
+                <span class="tag-pill">C</span>
+                <span class="tag-pill">Git</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-filters">
-                <button data-filter="all" class="active">All</button>
-                <button data-filter="web">Web Apps</button>
-                <button data-filter="design">Design</button>
-                <button data-filter="other">Other</button>
-            </div>
-            <div class="project-grid">
-                <div class="project-card" data-category="web">Project 1</div>
-                <div class="project-card" data-category="design">Project 2</div>
-                <div class="project-card" data-category="web">Project 3</div>
-                <div class="project-card" data-category="other">Project 4</div>
-            </div>
+      <div class="container">
+        <div class="section-label">Projects</div>
+        <div class="project-filters">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="web">Web Apps</button>
+          <button data-filter="design">Design</button>
+          <button data-filter="other">Other</button>
         </div>
+        <div class="project-grid">
+          <div class="project-card" data-category="web">Project 1</div>
+          <div class="project-card" data-category="design">Project 2</div>
+          <div class="project-card" data-category="web">Project 3</div>
+          <div class="project-card" data-category="other">Project 4</div>
+        </div>
+      </div>
     </section>
 
-    <!-- Experience -->
-    <section id="journey" class="experience">
-        <div class="container">
-            <h2>Learning Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-date">December, 2025 — <em>present</em></span>
-                    <h3>Started CS50: Introduction to Computer Science</h3>
-                    <p>CS50 is 11 weeks long Introductory Computer Science course offered by <em>Hardvard University.</em></p>
-                    <p>
-                        <ul>
-                            <li>Studied programming basics from scratch in C</li>
-                            <li>Studied and implemented memory manipulation</li>
-                            <li>Became familiar with basic Data Structures and Algorithms</li>
-                            <li>Had an intense and confusing learning phase by applying what I learned in problem sets</li>
-                            <li>Currently diving deep into Data Structures and Algorithms</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">March, 2026 - <em>present</em></span>
-                    <h3>Started Full-Stack Web Development through <em>The Odin Project</em></h3>
-                    <p>TOP(The Odin Project) is an open source coding education platform teaching Full-Stack Development.</p>
-                    <p>
-                        <ul>
-                            <li>Currently learning by building project along the way</li>
-                        </ul>
-                    </p>
-                </div>
+    <!-- Journey -->
+    <section id="journey" class="journey">
+      <div class="container">
+        <div class="section-label">Journey</div>
+        <div class="journey-list">
+          <div class="journey-item">
+            <div class="journey-date">Dec 2025 — Mar 2026</div>
+            <div class="journey-title">
+              CS50: Introduction to Computer Science
             </div>
+            <div class="journey-body">
+              Harvard's intro CS course. Started off with zero background — C,
+              memory, pointers, data structures, and basics of web programming.
+              The problem sets felt brutal at first but eventually I enjoyed
+              solving them. CS50 taught me how to think about problems, not just
+              how to write code.
+            </div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-date">Mar 2026 — present</div>
+            <div class="journey-title">The Odin Project — Full-Stack Path</div>
+            <div class="journey-body">
+              Open-source full-stack curriculum built around building real
+              things. HTML, CSS, JavaScript — and now getting into backend with
+              Node.js and Express. Still going.
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <div class="skill-item" data-level="65%">
-                    <span class="skill-name">HTML</span>
-                </div>
-                <div class="skill-item" data-level="70%">
-                    <span class="skill-name">CSS</span>
-                </div>
-                <div class="skill-item" data-level="60%">
-                    <span class="skill-name">JavaScript</span>
-                </div>
-                <div class="skill-item" data-level="0.5%">
-                    <span class="skill-name">React</span>
-                </div>
-                <div class="skill-item" data-level="0%">
-                    <span class="skill-name">Node.js</span>
-                </div>
-                <div class="skill-item" data-level="50%">
-                    <span class="skill-name">Python</span>
-                </div>
+      <div class="container">
+        <div class="section-label">Skills</div>
+        <div class="skills-list">
+          <div class="skill-row">
+            <span class="skill-name">HTML</span>
+            <div class="skill-track">
+              <div class="skill-fill" data-level="0.65"></div>
             </div>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">CSS</span>
+            <div class="skill-track">
+              <div class="skill-fill" data-level="0.70"></div>
+            </div>
+            <span class="skill-pct">70%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-track">
+              <div class="skill-fill" data-level="0.60"></div>
+            </div>
+            <span class="skill-pct">60%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Python</span>
+            <div class="skill-track">
+              <div class="skill-fill" data-level="0.50"></div>
+            </div>
+            <span class="skill-pct">50%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">C</span>
+            <div class="skill-track">
+              <div class="skill-fill accent2" data-level="0.35"></div>
+            </div>
+            <span class="skill-pct">35%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">React</span>
+            <div class="skill-track">
+              <div class="skill-fill" data-level="0.02"></div>
+            </div>
+            <span class="skill-pct">~0%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Node.js</span>
+            <div class="skill-track">
+              <div class="skill-fill accent2" data-level="0.05"></div>
+            </div>
+            <span class="skill-pct">~0%</span>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p>"Neil delivered excellent work with attention to detail."</p>
-                    <span>- Client A</span>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Highly recommend! Professional and efficient."</p>
-                    <span>- Client B</span>
-                </div>
+    <!-- Build Logs -->
+    <section id="buildlogs" class="buildlogs">
+      <div class="container">
+        <div class="section-label">Build Logs</div>
+        <div class="buildlogs-grid">
+          <div class="log-card">
+            <div class="log-meta">
+              <span class="log-tag cs">Heading</span>
+              <span class="log-date">Mar 2026</span>
             </div>
+            <div class="log-title">Log Title</div>
+            <div class="log-excerpt">Log Body</div>
+            <div class="log-footer">
+              <span class="tag-pill">C</span>
+              <span class="tag-pill">pointers</span>
+              <span class="tag-pill">CS50</span>
+            </div>
+          </div>
+          <div class="log-card">
+            <div class="log-meta">
+              <span class="log-tag backend">Heading</span>
+              <span class="log-date">Mar 2026</span>
+            </div>
+            <div class="log-title">Log Title</div>
+            <div class="log-excerpt">Log Body</div>
+            <div class="log-footer">
+              <span class="tag-pill">Node.js</span>
+              <span class="tag-pill">HTTP</span>
+              <span class="tag-pill">beginner</span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+      <div class="container">
+        <div class="section-label">Contact</div>
+        <div class="contact-layout">
+          <div class="contact-text">
+            <h2>Let's talk.</h2>
+            <p>
+              Whether it's feedback on my work, a collaboration, or just saying
+              hi — I'm reachable.
+            </p>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send message</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Neil Thapa. All rights reserved.</p>
+      <div class="container">
+        <span>neil thapa © 2026</span>
+        <div class="footer-links">
+          <a href="#">github</a>
+          <a href="#">contact</a>
         </div>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
