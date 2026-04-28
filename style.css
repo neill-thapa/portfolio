@@ -484,7 +484,7 @@ section {
   text-align: right;
 }
 
-/* ==== Build Logs */
+/* ==== Build Logs ====*/
 .buildlogs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -559,9 +559,7 @@ section {
   flex-wrap: wrap;
 }
 
-/* ========================
-   CONTACT
-======================== */
+/* ==== Contact ==== */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -611,9 +609,7 @@ textarea::placeholder {
   color: var(--muted);
 }
 
-/* ========================
-   FOOTER
-======================== */
+/* ==== Footer ==== */
 .footer {
   border-top: 1px solid var(--border);
   padding: 2rem 0;
@@ -624,7 +620,11 @@ textarea::placeholder {
   justify-content: space-between;
   align-items: center;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
+}
+
+.footer .copy-text {
+  color: white;
 }
 
 .footer-links {
@@ -637,12 +637,10 @@ textarea::placeholder {
   transition: color 0.2s;
 }
 .footer-links a:hover {
-  color: var(--accent);
+  color: white;
 }
 
-/* ========================
-   MEDIA QUERIES
-======================== */
+/* ==== Media Queries ==== */
 @media (max-width: 768px) {
   /* Mobile nav */
   .nav-links {
