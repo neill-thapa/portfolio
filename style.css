@@ -629,6 +629,11 @@ textarea::placeholder {
   color: white;
 }
 
+.footer .social-icons {
+  width: 24px;
+  height: 24px;
+}
+
 .footer-links {
   display: flex;
   gap: 1.5rem;
@@ -689,5 +694,9 @@ textarea::placeholder {
   /* Footer */
   .footer .container {
     font-size: 10px;
+  }
+  .footer .social-icons {
+    width: 20px;
+    height: 20px;
   }
 }
