@@ -617,8 +617,10 @@ textarea::placeholder {
 
 .footer .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   color: var(--muted);
   font-size: 14px;
 }
